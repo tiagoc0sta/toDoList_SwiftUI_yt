@@ -7,20 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F03FCC192C572DDF00DE513D /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03FCC182C572DDF00DE513D /* AddView.swift */; };
 		F07428412C56ECEB0034DCAC /* ToDoListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07428402C56ECEB0034DCAC /* ToDoListApp.swift */; };
 		F07428452C56ECEC0034DCAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F07428442C56ECEC0034DCAC /* Assets.xcassets */; };
 		F07428482C56ECEC0034DCAC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F07428472C56ECEC0034DCAC /* Preview Assets.xcassets */; };
 		F07428502C56ED630034DCAC /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F074284F2C56ED630034DCAC /* ListView.swift */; };
 		F07428522C56EF420034DCAC /* ListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07428512C56EF420034DCAC /* ListRowView.swift */; };
+		F09743702C57E92B00F41D2A /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F097436F2C57E92B00F41D2A /* ItemModel.swift */; };
+		F09743732C57F81500F41D2A /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09743722C57F81500F41D2A /* ListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F03FCC182C572DDF00DE513D /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
 		F074283D2C56ECEB0034DCAC /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F07428402C56ECEB0034DCAC /* ToDoListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListApp.swift; sourceTree = "<group>"; };
 		F07428442C56ECEC0034DCAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F07428472C56ECEC0034DCAC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F074284F2C56ED630034DCAC /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		F07428512C56EF420034DCAC /* ListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowView.swift; sourceTree = "<group>"; };
+		F097436F2C57E92B00F41D2A /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
+		F09743722C57F81500F41D2A /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,8 @@
 			isa = PBXGroup;
 			children = (
 				F07428402C56ECEB0034DCAC /* ToDoListApp.swift */,
+				F097436E2C57E8C800F41D2A /* Models */,
+				F09743712C57F7C200F41D2A /* ViewModels */,
 				F074284E2C56ED420034DCAC /* Views */,
 				F07428442C56ECEC0034DCAC /* Assets.xcassets */,
 				F07428462C56ECEC0034DCAC /* Preview Content */,
@@ -74,8 +82,25 @@
 			children = (
 				F074284F2C56ED630034DCAC /* ListView.swift */,
 				F07428512C56EF420034DCAC /* ListRowView.swift */,
+				F03FCC182C572DDF00DE513D /* AddView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		F097436E2C57E8C800F41D2A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F097436F2C57E92B00F41D2A /* ItemModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F09743712C57F7C200F41D2A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F09743722C57F81500F41D2A /* ListViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +173,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F09743702C57E92B00F41D2A /* ItemModel.swift in Sources */,
+				F03FCC192C572DDF00DE513D /* AddView.swift in Sources */,
+				F09743732C57F81500F41D2A /* ListViewModel.swift in Sources */,
 				F07428412C56ECEB0034DCAC /* ToDoListApp.swift in Sources */,
 				F07428502C56ED630034DCAC /* ListView.swift in Sources */,
 				F07428522C56EF420034DCAC /* ListRowView.swift in Sources */,

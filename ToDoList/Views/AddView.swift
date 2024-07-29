@@ -8,11 +8,39 @@
 import SwiftUI
 
 struct AddView: View {
+    @EnvironmentObject var listViewModel: ListViewModel
+    @State var textFieldText: String = ""
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView{
+            VStack {
+                TextField("Type something here...", text: $textFieldText)
+                    .padding(.horizontal)
+                    .frame(height: 55)
+                    .background(Color(.systemGray6))
+                    .cornerRadius(10)
+                
+                Button(action: saveButtonPressed, label: {
+                    Text("Save".uppercased())
+                        .foregroundStyle(.white)
+                        .font(.headline)
+                        .frame(height: 55)
+                        .frame(maxWidth: .infinity)
+                        .background(Color.accentColor)
+                        .cornerRadius(10)
+                })
+            }
+            .padding(14)
+        }
+        .navigationTitle("Add an Item 🖋️")
+    }
+    func saveButtonPressed() {
+                
     }
 }
 
 #Preview {
-    AddView()
+    NavigationView{
+        AddView()
+    }
 }
