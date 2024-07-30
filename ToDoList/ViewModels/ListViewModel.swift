@@ -18,7 +18,14 @@ import Foundation
  */
 
 class ListViewModel: ObservableObject {
-    @Published var items: [ItemModel] = []
+    @Published var items: [ItemModel] = [] {
+        didSet {
+            
+        }
+    }
+    
+    
+    let itemsKey: String = "items_list"
     
     init() {
         getItems()
@@ -59,6 +66,12 @@ class ListViewModel: ObservableObject {
             items[index] = item.updateCompetion()
         }
         
+    }
+    
+    func saveItems(){
+        if let encodedData = try? JSONEncoder().encode(items) {
+            UserDefaults.standard.set(encodedData, forKey: itemsKey)
+        }
     }
     
 }

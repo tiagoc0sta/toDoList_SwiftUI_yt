@@ -8,7 +8,7 @@
 import Foundation
 
 //Immutable Struc - use let because of that
-struct ItemModel: Identifiable {
+struct ItemModel: Identifiable, Codable {
     let id: String
     let title: String
     let isCompleted: Bool
