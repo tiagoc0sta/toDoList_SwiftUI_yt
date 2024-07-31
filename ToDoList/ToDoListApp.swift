@@ -16,7 +16,7 @@ struct ToDoListApp: App {
         WindowGroup {
             NavigationView{
                 ListView()                
-            }
+            }.navigationViewStyle(StackNavigationViewStyle())
             .environmentObject(listViewModel)
         }
     }
